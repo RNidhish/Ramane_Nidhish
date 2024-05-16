@@ -1,0 +1,357 @@
+*
+{
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body
+{
+    background-color: black;
+}
+
+/*header*/
+
+/*poster*/
+
+.banner
+{
+    background-image: url(dark/dark_ord.png);
+    background-size: cover;
+    background-position: center center;
+    color:white;
+    object-fit: contain ;
+    height: 448px;
+}
+
+.banner_contents
+{
+    margin-left: 30px;
+    padding-top: 140px;
+    height: 190px;
+}
+
+.banner_titre
+{
+    font-size: 5rem;
+    font-weight: 1000;
+    padding-bottom: 0.3rem;
+    text-shadow: 5px 5px 15px rgb(95, 137, 145);
+}
+
+.banner_des
+{
+    
+    line-height: 1.5;
+    padding-top: 1rem;
+    font-size: 1rem;
+    max-width: 570px;
+}
+
+.banner_button
+{
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 1.2vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgba(46, 45, 45, 0.384);
+
+
+}
+
+.banner_button:hover
+{
+    color: black;
+    background-color: #e6e6e6;
+    transition: all 0.2s;
+
+
+}
+
+.banner--fadebottom
+{
+    margin-top: 145px;
+    height: 7.4rem;
+    background-image: linear-gradient(180deg,transparent,rgb(37,37,37,0.61),#111);
+}
+
+/*top*/
+
+.nav_logo
+{
+    width: 90px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.nav_login
+{
+    width: 40px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+
+.nav
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    z-index: 1;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+}
+
+.nav_black
+{
+    
+    background-color: #000000;
+    
+}
+
+/*menu*/
+
+.menu
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+}
+
+.menu a
+{
+    color: rgb(255, 255, 255);
+    font-size: larger;
+    font-weight: bold;
+
+}
+
+a:hover
+{
+    color: yellow;
+    font-weight: bold;
+    text-shadow: 5px 5px 15px rgb(143, 147, 39);
+
+}
+.menu ul
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu ul li
+{
+    margin: 0 50px;
+
+}
+
+.menu_p
+{
+    display: none;
+}
+
+/*main*/
+
+/*******************            BLOCS           **********************************/
+
+.grosBloc {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 5rem;
+    justify-content: space-around;
+    box-shadow: 5px 5px 15px black;
+}
+
+.petitBloc {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    max-width: 465px;
+    min-height: 10em;
+    margin: 25px;
+    display: flex;
+    flex-direction: row ;
+    box-shadow: 5px 5px 15px rgb(208, 194, 66);
+}
+
+.petitBloc2 {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    min-height: 320px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: 5px 5px 15px rgb(208, 194, 66);
+    justify-content: center;
+    align-items: center;
+}
+
+
+.childPetitBloc{
+    background-color: #f9eea9fc;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 5px 5px 15px rgb(208, 194, 66);
+    padding: 2px 10px 2px ;
+}
+.childPetitBlocSpe
+{
+    background-color: #efef7b;
+    border-radius: 20px;
+    padding: 2px 10px 2px;
+    box-shadow: 5px 5px 15px rgb(208, 194, 66);
+}
+.childPetitBloc2
+{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.titre 
+{
+    padding-top: 10px;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+
+}
+
+.sousTitre
+{
+    color: #6b6e19;
+}
+
+.article
+{
+    overflow: scroll; 
+    text-align: justify;
+    max-width: 275px;
+    max-height: 8.5rem;
+}
+.article::-webkit-scrollbar
+{
+    display: none;
+}
+
+.paragraphe {
+    text-align: justify;
+    margin-right: 3%;
+}
+
+.acteur 
+
+{
+    height: 200px; /* Set a fixed height for the images */
+    width: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+}
+
+.trophy
+{
+    height: 60px;
+    
+}
+
+@media screen and (max-width: 428px) 
+{
+    /*header menu*/
+    .nav
+    {
+        padding: 0;
+    }
+
+
+    .menu_p
+    {
+        display: block;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    .menu 
+    {
+        top: 0;
+        left:0;
+        position: absolute;
+        background-color: rgba(123, 119, 119, 0.29);
+        backdrop-filter: blur(7px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+
+    }
+    .menu a
+    {
+        color: black;
+    }
+
+
+
+    a:hover
+    {
+        color: yellow;
+        font-weight: bold;
+        text-shadow: 5px 5px 15px rgb(143, 147, 39);
+
+    }
+    .menu ul
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .menu ul li
+    {
+        margin: 25px 0;
+        font-size: 1.5em;
+
+    }
+
+    .menu.mobile-menu
+    {
+        margin-left:0 ;
+    }
+
+    .petitBloc 
+    {
+
+        display: flex;
+        flex-direction: column ;
+        justify-content: center; /* Center horizontally */
+        align-items: center;
+
+    }
+
+    .acteur 
+    {
+        height: 150px; /* Set a fixed height for the images */
+        width: 150px; /* Set a fixed width for the images */
+        display: flex;
+
+        border-radius: 50%; /* Make it a circle */
+    }
+
+
+}

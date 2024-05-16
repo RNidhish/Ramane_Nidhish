@@ -1,0 +1,728 @@
+body {
+    background-color: #19345A;
+    color: #ffff;
+    font-family: 'Inter', sans-serif;
+    text-shadow: 5px 5px 15px black;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/**********Ligne Verticale***************/
+#ligne-verticale
+{
+    display: none;
+}
+#ligne-verticale2
+{
+    display: flex;
+    max-width: 600px;
+    height: 1px;
+    background-color: silver;
+}
+
+/*******************            BLOCS           **********************************/
+
+.grosBloc {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: #7578CF;
+    border-radius: 20px;
+    margin: 5rem;
+    padding: 1.5rem;
+    justify-content: space-around;
+    box-shadow: 5px 5px 15px black;
+}
+
+
+
+.petitBloc {
+    background-color: rgba(25, 52, 90, 0.85);
+    border-radius: 20px;
+    max-width: 465px;
+    min-height: 10em;
+    margin: 25px;
+    display: flex;
+    flex-direction: row ;
+    box-shadow: 5px 5px 15px black;
+}
+
+.petitBloc2 {
+    background-color: rgba(25, 52, 90, 0.85);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+    min-height: 320px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: 5px 5px 15px black;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.childPetitBloc{
+    background-color: #19345A;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 5px 5px 15px black;
+    padding: 2px 10px 2px ;
+}
+.childPetitBlocSpe
+{
+    background-color: #19345A;
+    border-radius: 20px;
+    padding: 2px 10px 2px;
+    box-shadow: 5px 5px 15px black;
+}
+
+/*******************            TEXTES            **********************************/
+
+.article
+{
+    overflow: scroll; 
+    text-align: justify;
+    max-width: 275px;
+    max-height: 8.5rem;
+}
+.article::-webkit-scrollbar
+{
+    display: none;
+}
+.titre {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 4rem ;
+
+}
+.espace h4
+{
+    display: flex;
+    justify-content: center;
+}
+.paragraphe, .paragraphe2{
+    text-align: justify;
+    margin-right: 3%;
+    margin-left: 3%;
+    
+}
+
+.childPetitBloc2
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.sousTitre
+{
+    display: flex;
+    justify-content: center;
+    color: #BAB6B6;
+}
+.evenement
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prix428
+{
+    display: none;
+}
+
+
+/****************           HEADER            ******************/
+
+.header428
+{
+    display: none;
+}
+header
+{
+    background-image: url(html_images/background.png);
+    max-width: 1280px;
+    height: 750px;
+
+}
+.pHeader
+{
+    color: white;
+    margin-left: 40px;
+    
+
+}
+figcaption
+{
+    color: white;
+}
+
+.euphoria
+{
+    color: white;
+    font-size: 7em;
+    margin-left: 40px;
+    margin-bottom: 0px;
+}
+
+.top
+{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top ul
+{
+    
+    margin-right: 0px;
+
+}
+.top li
+{
+    display: inline-block;
+    margin: 0px;
+    line-height: 80px;
+}
+
+.recherche
+{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    border-radius: 24px;
+    background: rgba(34, 34, 152, 0.63);
+    transition: box-shodow 0.25;
+    
+}
+.recherche:focus-within
+{
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+.recherche-input
+{
+    font-size: 16px;
+    color:white;
+    margin-left: 14px;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.recherche-input::placeholder,.recherche-icone
+{
+    color:white;
+
+}
+
+.Logo
+{
+    margin: 0;
+    margin-top: 36px;
+}
+
+.serie
+{
+    display: flex;
+    align-items: center;
+    color: rgb(139, 137, 137);
+    margin-left: 40px;
+}
+
+.serie li
+{
+    display: inline-block;
+
+}
+
+.serie figcaption 
+{
+    color: rgb(139, 137, 137);
+    margin-left: 5px; 
+}
+
+.serie figure {
+    display: flex;
+    align-items: center;
+}
+.texteHeader
+{
+    display: flex;
+    align-items: center;
+    color: rgb(139, 137, 137);
+    margin-left: 40px;
+}
+
+.texteHeader ul
+{
+    
+    margin-right: 0px;
+
+}
+.texteHeader li
+{
+    display: inline-block;
+
+}
+
+.texteHeader figure {
+    display: flex;
+    align-items: center;
+}
+
+.texteHeader figcaption 
+{
+    color: rgb(139, 137, 137);
+    margin-left: 5px; 
+}
+
+.texteHeader img {
+    margin-left: 9px;
+}
+
+.texteHeader a
+{
+    color: rgb(139, 137, 137);
+    text-decoration: none;
+}
+
+.menu
+{
+    height: 75px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+   /* margin-top: 8.2em;*/
+
+}
+
+.menu li{
+    display: table-cell;
+    padding: 15px ;
+
+}
+
+.menu a
+{
+    color: rgb(130, 127, 127);
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    font-size: 1.5em;
+    display: inline-block;
+    padding: 1px 40px;
+
+}
+
+a:hover {
+    color: white;
+
+}
+
+.titreHeader
+{
+    margin-top: 14.5em;
+    width: 800px;
+}
+
+/*********Profil 428px **************/
+.proZendaya428
+{
+    display: none;
+}
+
+.proAngus428
+{
+    display: none;
+}
+.proAlexa428
+{
+    display: none;
+}
+.proJacob428
+{
+    display: none;
+}
+.proMaude428
+{
+    display: none;
+}
+.proHunter428
+{
+    display: none;
+}
+
+
+/********           MEDIA QUERRIES         *******/
+
+@media screen and (max-width: 650px) {
+    /**********HEADER*************/
+    header
+    {
+        display: none;
+    }
+    /****************GROS BLOC********************/
+
+    .grosBloc {
+        
+        margin: 2rem;
+        
+    }
+
+
+    /*************CASTING**************/
+    .titre
+    {
+        padding-top: 2rem ;
+    }
+    img
+    {
+        max-width: 200px;
+        padding-top: 1rem;
+        
+    }
+    .petitBloc
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .paragraphe, .paragraphe2
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*********RECOMPENSES************/
+
+    .petitBloc2
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 0.5rem;
+        justify-content: center;
+    }
+   
+}
+
+@media screen and (max-width: 888px) {
+    .petitBloc2
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 0.5rem;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 428px)
+{
+    html
+    {
+        padding: 2rem;
+    }
+    /*******Lignes verticales*********/
+    #ligne-verticale
+    {
+        display: flex;
+        width: 380px;
+        height: 1px;
+        background-color: silver;
+    }
+
+    /************************   Header 428px    **********************************/
+    .header428
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .headerPart
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1%;
+    }
+    .headernote428
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .headerJournaux
+    {
+        display: flex;
+        flex-direction: row;
+        margin: 1%;
+        font-size: 0.7rem;
+        align-items: center;
+    }
+    .headerJournal
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 15rem;
+        margin: 2%;
+    }
+    .headercrit
+    {
+        display: flex;
+        flex-direction: column;
+        padding-top: 1rem;
+        
+    }
+
+    /************Supprimer les images du format pc**************/
+    .proZendaya, .proHunter, .proJacob, .proMaude, .proAngus, .proAlexa {
+        display: none;
+    }
+    .prixNorm{
+        display: none;
+    }
+
+    /***************Remplacer les images pc par les images au format 428px*******************/
+    .proZendaya428
+    {
+        display: flex;
+        max-width: 125px;
+        
+        clip-path: ellipse(27% 34%);
+    }
+    .proAngus428
+    {
+        display: flex;
+        max-width: 125px;
+        
+        clip-path: ellipse(28% 34%);
+    }
+    .proMaude428
+    {
+        display: flex;
+        max-width: 125px;
+        
+        clip-path: ellipse(28% 34%);
+    }
+    .proAlexa428
+    {
+        display: flex;
+        max-width: 125px;
+        
+        clip-path: ellipse(27% 34%);
+    }
+    .proHunter428
+    {
+        display: flex;
+        max-width: 125px;
+        
+        clip-path: ellipse(27% 30%);
+    }
+    .proJacob428
+    {
+        display: flex;
+        max-width: 125px;
+        
+        clip-path: ellipse(28% 34%);
+    }
+
+    /***********Textes 428 px***************/
+    
+    .article
+    {
+        display: none;
+    }
+    h4, .sousTitre
+    {
+        font-size: 0.8rem;
+    }
+    .chilPetitBloc2 .paragraphe p, .chilPetitBloc2 .paragraphe2 p
+    {
+        font-size: 0.59rem;
+        float: left;
+    }
+    .paragraphe
+    {
+        align-items: center;
+    }
+    .titre
+    {
+        font-size: 0.9rem;
+        margin-top: 2rem;
+    }
+    .drama428
+    {
+        display: flex;
+        
+        justify-content: center;
+        color: grey;
+        font-size: 0.7rem;
+    }
+    .blabla428
+    {
+        text-align: justify;
+        line-height: 1.4;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .prix428
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+    /**************Profils du Bloc de casting 428px****************/
+    .petitBloc
+    {
+        display: flex;
+        background-color: rgba(25, 52, 90, 0);
+        flex-direction: row;
+        box-shadow: none;
+        margin: 0%;
+    }
+    /*.petitBloc:nth-child(odd)
+    {
+        
+    }*/
+    .switchPrix
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .bloc428
+    {
+        background-color: #19345A;
+        border-radius: 20px;
+        min-width: 8rem;
+    }
+    .paragraphe2
+    {
+        align-items: baseline;
+    }
+    
+    
+    .grosBloc
+    {
+        margin: 0.2em;
+        padding-left: 0;
+        min-width: fit-content;
+        background-color: rgba(117, 120, 207, 0.65);
+    }
+
+    /*************Recompenses 428 px**************/
+    .childPetitBloc, .childPetitBlocSpe
+    {
+        background-color: rgba(25, 52, 90, 0);
+        box-shadow: none;
+        padding: 0;
+        max-width: 10rem;
+    }
+
+
+    .petitBloc2
+    {
+        flex-direction: row;
+        min-height: max-content;
+        max-width: max-content;
+    }
+
+    
+    
+    .petitBloc2 img
+    {
+        width: 75px;
+    }
+
+    .recompenses
+    {
+        display: none;
+    }
+    
+}
+
+
+/***********************************    Menu déroulant   *******************************************/
+
+#wrap
+{
+    width: 100%;
+    
+    margin: 0;
+    z-index: 50;
+    position: relative;
+    background-color: black;
+}
+
+.navbar {
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+
+.navbar li {
+    height: auto;
+    width: 300px;
+    float: left;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+.navbar a {
+    padding-top: 1vw;
+    color: white;
+    display: block;
+}
+
+.navbar li:hover,
+a:hover {
+  background-color: grey;
+}
+
+.navbar li ul {
+    display: none;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li:hover ul {
+display: block;
+}
+
+.navbar li ul li {
+    background-color: black;
+}
+
+.navbar li ul li a {
+    border-left: 1px solid #444444;
+    border-right: 1px solid #444444;
+    border-top: 1px solid #c9d4d8;
+    border-bottom: 1px solid #444444;
+}
+
+.navbar li ul li a:hover {
+    background-color: #a3a1a1;
+}
+
+
