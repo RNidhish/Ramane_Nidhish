@@ -1,0 +1,25 @@
+1. docker image pull clock
+
+2. docker volume create sae103
+
+3. docker volume ls
+
+4. docker container run -d -v sae103:/work clock
+
+
+utiliser un foreach($lines as $a_lines){: cible une ligne
+}
+
+un tiret est un élément d'une liste, pareil pour les tableaux et les backsticks. 
+Pour générer l'HTML : parcourir le tabelau ligne par ligne et mettre des flags.
+avec les expressions régulières on peut zapper les espaces.
+Si je rencontre un tiret : suis-je dans une liste, si oui faire un <li></li> sinon <ul><li></li></ul>
+Utiliser un booleen pour gérer ce genre de cas.
+
+Si je rencontre autre chose qu'un tiret alors je ferme mon </ul>
+
+
+$in_list
+$in_table
+$in_code
+pour définir les éléments qui composent ma page.

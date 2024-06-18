@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Technique en HTML</title>
+    <style>
+        body
+        {
+            background-color: antiquewhite;
+            font-family: Courier, monospace;  
+            font-size: 1.3em;
+        }
+
+        .titreh1
+        {
+            text-align: center;
+            text-transform: capitalize;
+            font-size: 3em;
+        }
+        article
+        {
+            background-color: bisque;
+            text-align: center;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding: 0 25px 20px ;
+            border-top-right-radius: 25px;
+            border-top-left-radius:25px ;
+        }
+
+        div
+        {
+            text-align: left;
+        }
+
+        .titre
+        {
+            text-align: center;
+            color: red;
+            font-variant: small-caps;
+            font-size: 1.6em;
+            
+        }
+
+        .tableau
+        {
+            border-collapse: collapse;
+            border-spacing: 1em;
+            border: 3px solid black;
+            
+        }
+
+        th, tr, td{
+            border: 2px solid black;
+        }
+
+        .tableau, th, tr, td
+        {
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+<body>
+    <header>
+        <h1 class="titreh1">Documentation Technique en Langugage HTML</h1>
+    </header>
+    <main>
+        <article>
+            <h2 class="titre">Titres</h2>
+            <div>
+                <h1>Titre de niveau 1</h1>
+                <h2>Titre de niveau 2</h2>
+                <h3>Titre de niveau 3</h3>
+                <h4>Titre de niveau 4</h4>
+            </div>
+        </article>
+        <article>
+            <h2 class="titre">Définition d'une liste</h2>
+            <div>
+                <dl>
+                    
+                    <dt>Introduit un terme</dt>
+                    <dd>Introduit une définition</dd>
+                </dl>
+            </div>
+        </article>
+        <article>
+            <h2 class="titre">Style sémentique du texte</h2>
+            <div>
+                <q>Citation</q>
+                <br>
+                <cite>Titre d'une oeuvre</cite>
+                <br>
+                <em>Texte en gras italique</em>
+                <br>
+                <strong>Texte en gras</strong>
+                <br>
+                <mark>Texte en surbrillance</mark>
+                <br>
+                <span>Délimite avec une mise en page spécifique</span>
+                <br>
+                <sub>Exposant</sub>
+                <br>
+                <ins>Texte souligné</ins>
+                <br>
+                <del>Texte barré</del>
+            </div>
+        </article>
+        <article>
+            <h2 class="titre">Le Tableau</h2>
+            <div>
+                <table class="tableau">
+                    <caption>Nom du tableau</caption>
+                    <thead> 
+                        <tr>
+                            <th><b>cellule en tête de ligne1</b></th>
+                            <th><b>cellule en tête de ligne2</b></th>
+                            <th><b>cellule en tête de ligne3</b></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">cellule de données1 de 2lignes de hauteur</td>
+                            <td><i>cellule de données2</i></td>
+                            <td><i>cellule de données3</i></td>
+                        </tr>
+                        <tr>
+                            <td>cellule de données4</td>
+                            <td>cellule de données5</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">cellule de données de 2lignes de largeur</td>
+                            <td>cellule de données6</td>
+                        </tr> 
+                    </tfoot>
+                </table>
+            </div>
+        </article>
+        <article>
+            <h2 class="titre">URL</h2>
+            <div>
+                <a href="https://youtube.com">Youtube</a >
+            </div>
+        </article>
+        <article>
+            <h2 class="titre">Code</h2>
+            <div>
+                <code>
+                    <p>int main(){</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;printf("Hello World!\n");</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;return EXIT_SUCCESS;</p>
+                    
+                    
+                    }
+                </code>
+            </div>
+        </article>
+    </main>
+    <footer>
+
+    </footer>
+</body>

@@ -1,0 +1,14 @@
+Tâches réalisées :
+
+Création des 3 fichiers en C :
+    Nathan (100%) Eliott (0%) Nidhish(0%) Hunter(0%)
+
+Création manuelle d’un modèle de documentation technique au format HTML :
+    Eliott(50%) Nathan (50%)  Nidhish(0%) Hunter(0%)
+
+Création manuelle d’un modèle de documentation utilisateur au format Markdown :
+    Nathan (50%) Eliott(50%) Nidhish(0%) Hunter(0%)
+
+Création manuelle d’un fichier HTML qui soit la transformation du fichier modèle Markdown précédent.
+    Eliott(100%) Nathan (0%) Nidhish(0%) Hunter(0%)
+

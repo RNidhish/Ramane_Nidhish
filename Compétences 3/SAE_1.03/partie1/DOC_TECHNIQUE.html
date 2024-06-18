@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Documentation Utilisateur du Language C</title>
+        <style>
+            body
+            {
+                background-color: antiquewhite;
+                font-family: Courier, monospace;
+                font-size: 1.3em;
+            }
+
+
+            article
+            {
+                background-color: bisque;
+                margin-left: 200px;
+                margin-right: 200px;
+                padding: 0 25px 20px ;
+                border-top-right-radius: 25px;
+                border-top-left-radius:25px ;
+                
+
+            }
+            .titreh1
+            {
+                color: black;
+                font-size: 3em;
+            }
+
+            .p
+            {
+                text-align: center;
+                font-weight: bold;
+                margin-left: 200px;
+                margin-right: 200px;
+                font-size: 1.4em;
+            }
+
+            h1
+            {
+                text-align: center;
+                color: red;
+                font-variant: small-caps;
+                font-size: 1.6em;
+            }
+
+            .tableau
+            {
+                border-collapse: collapse;
+                border-spacing: 1em;
+                border: 3px solid black;
+                
+            }
+
+            tr, td{
+                border: 2px solid black;
+            }
+
+            .tableau, tr, td
+            {
+                text-align: center;
+                padding: 10px;
+            }
+
+            .fonction
+            {
+                font-weight: bold;
+            }
+
+            .div
+            {
+                margin-left: 30px;
+            }
+        </style>
+    </head>
+</html>
+<body>
+    <header>
+        <div>
+            <h1 class="titreh1">SRC1</h1>
+            <p class="p">Ce programme permet de gérer les bulletins d'un·e étudiant·e au sein de l'IUT au cours de son année.</p>
+        </div>
+    </header>
+    <main>
+        
+        <article>
+            <h1>DEFINES</h1>
+            <table class="tableau">
+                <tbody>
+                    <tr>
+                        <td>NB_UE</td>
+                        <td>6</td>
+                        <td>Nombre d'UE au cours d'un semestre</td>
+                    </tr>
+                    <tr>
+                        <td>NB_ETUDIANTS</td>
+                        <td>122</td>
+                        <td>Nombre d'étudiant·es inscrit·es</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <article>
+            <h1>STRUCTURES</h1>
+            <table class="tableau">
+                <tbody>
+                    <tr>
+                        <td>str_etudiant </td>
+                        <td>Structure d'un·e étudiant·e</td>
+                    </tr>
+                    <tr>
+                        <td>char login[8]</td>
+                        <td>Son login permettant de se connecter aux différentes plateformes</td>
+                    </tr>
+                    <tr>
+                        <td>char prenom [20]</td>
+                        <td>Son prénom</td>
+                    </tr>
+                    <tr>
+                        <td>char nom [20]</td>
+                        <td>Son nom</td>
+                    </tr>
+                    <tr>
+                        <td>float moyenneS1</td>
+                        <td>Sa moyenne du premier semestre</td>
+                    </tr>
+                    <tr>
+                        <td>float moyenneS2</td>
+                        <td>Sa moyenne du second semestre</td>
+                    </tr>
+                    <tr>
+                        <td>float moyenneAnnee</td>
+                        <td>Sa moyenne sur l'année entière</td>
+                    </tr>
+                    <tr>
+                        <td>float progression [30]</td>
+                        <td>Historique de ses 30 dernières notes</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article> 
+        <article>
+            <h1>GLOBALES</h1>
+            <table class="tableau">
+                <tbody>
+                    <tr>
+                        <td>float moyennes [NB_ETUDIANTS]</td>
+                        <td>Liste des moyennes de chaque étudiant·e</td>
+                    </tr>
+                    <tr>
+                        <td>int semaineActuelle</td>
+                        <td>Entier égal à la semaine actuelle</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <article>
+            <h1>FONCTIONS</h1>
+            <div>
+                <p class="fonction">void ajoutNote(str_etudiant etudiant, str_ue ue, float note)</p>
+                <div class="div">
+                    <span>Procédure permettant d'ajouter une nouvelle note</span>
+                    <h3>Paramètre</h3>
+                    <table class="tableau">
+                        <tbody>
+                            <tr>
+                                <td>etudiant</td>
+                                <td>Etudiant·e ayant une nouvelle note à rentrer</td>
+                            </tr>
+                            <tr>
+                                <td>ue</td>
+                                <td>UE correspondant à la nouvelle note</td>
+                            </tr>
+                            <tr>
+                                <td>note</td>
+                                <td>Note à ajouter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>La procédure ajoute à l'étudiant·e ainsi qu'à l'UE la note passée en paramètre.</p>
+                </div> 
+            </div>
+            <br>
+            <div>
+                <p class="fonction">int main()</p>
+                <div class="div">
+                    <span>Programme principal.</span>
+                    <h3>Renvoie</h3>
+                    <div class="div">Code de sortie du programme (0 : sortie normale).</div>
+                    <br>
+                    <div>
+                        Le programme principal initialise l'étudiant·e à suivre, les UE qu'il/elle a choisi puis débute la boucle principale de saisi de notes et de suivi de progression jusqu'à atteindre la dernière semaine.
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+    </main>
+</body>

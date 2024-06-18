@@ -1,0 +1,7 @@
+Tâches de l'équipe :
+
+Générer un script autonome en PHP
+	Hunter BOIVIN (%), Eliott JANOT (%), Nidhish RAMANE (%), Nathan THUAULT (%) 
+
+Générer une documentation utilisateur par un fichier .md grâce à un script autonome
+	Hunter BOIVIN (%), Eliott JANOT (%), Nidhish RAMANE (%), Nathan THUAULT (%) 
